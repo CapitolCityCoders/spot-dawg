@@ -6,14 +6,15 @@ When contributing to this repository, please first discuss the change you wish t
 - Fork the repo
 - Clone down your fork
 - Set up a remote to track this repo's dev branch `git remote add upstream https://github.com/mikemfleming/spot-dawg.git`
-- Update upstream `git fetch upstream`
+- Update branches `git fetch upstream`
+- SD uses snyk to find, fix, and monitor vulnerabilities in npm `npm install -g snyk`
 - Run `npm install`
 - Check your Node version. I use v8.6.0 and recommend using Node Version Manager
 - Set up your environment variables
 
 ## Run Tests
-- I use snyk to find, fix, and monitor vulnerabilities in npm `npm install -g snyk`
 - Run the tests `npm test`
+- If your dependencies are out of date snyk will warn you. You can run `snyk wizard` to update them to more secure versions or set them to be skipped.
 
 ## Start Working
 - Run `npm start`
